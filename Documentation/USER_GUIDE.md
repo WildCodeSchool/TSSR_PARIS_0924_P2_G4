@@ -45,5 +45,5 @@
 
 ### 5. Conclusion
 - Récapitulatif des fonctionnalités clés
-- Contacts pour l'assistance technique
-- Ressources supplémentaires pour approfondir les connaissances
+- Contacts pour l'assistance 
+- Ressources supplémentaires 
