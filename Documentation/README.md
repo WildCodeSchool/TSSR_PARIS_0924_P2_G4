@@ -3,10 +3,17 @@
 ### Présentation du projet et objectifs finaux
 
 Le projet consiste à créer un script qui s’exécute sur une machine et effectue des tâches sur des machines distantes. L’ensemble des machines sont sur le même réseau.
+> Depuis une machine Windows Server, on exécute un script PowerShell qui cible des ordinateurs Windows.
+
+> Depuis une machine Debian, on exécute un script shell qui cible des ordinateurs Ubuntu.
 
 ### Introduction et mise en contexte
 
-xxx 
+Le projet permet de disposer d'une documentation métier permettant de : 
+- Mettre en place une architecture client/serveur
+- Créer et gérer des scripts bash et PowerShell
+- Comprendre toutes les étapes
+- Faire une démonstration de la réalisation finale
 
 ### Membres du groupe de projet et rôle par sprint
 
