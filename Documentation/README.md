@@ -30,9 +30,9 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
 | Difficultés | solutions |
 | :--- | :--- |
-1. xxx | 1. xxx  
-2. xxx | 2. xxx 
-3. xxx | 3. xxx
+xxx | xxx  
+xxx | xxx 
+xxx | xxx
 
 ### Améliorations possibles et suggestions d’améliorations futures
 
