@@ -44,6 +44,6 @@
 - Réponses aux problèmes rencontrés
 
 ### 5. Conclusion
-- Récapitulatif des fonctionnalités clés
+- Récapitulatif des points clés
 - Contacts pour l'assistance 
 - Ressources supplémentaires 
