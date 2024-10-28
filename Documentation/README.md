@@ -35,15 +35,16 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
 ### Arborescence du menu proposé
 
-- Veuillez identifier votre profil : utilisateur (U) ou Ordinateur client (O) (read -p)
 - Souhaitez-vous réaliser une action dans le système (A) ou obtenir une information du système (I) ?
-- Si U + A (utilisateur + action) = 
-    > Souhaitez-vous créer (C) ; supprimer (S) ; désactiver (D) un compte utilisateur local ?
+- Si A =
+    > Souhaitez-vous réaliser une action sur un utilisateur (U) ou sur un Ordinateur client (O) ?
+- Si A + U (action + utilisateur) = 
+    > Souhaitez-vous créer (C) ; supprimer (S) ; désactiver (D) un compte utilisateur local ? >>> MAMADOU
     
-    > Souhaitez-vous effectuer un changement de mot de passe (M) ?
+    > Souhaitez-vous effectuer un changement de mot de passe (M) ? >>> WALID
     
-    > Souhaitez-vous ajouter ou sortir un utilisateur d'un groupe (G) ?
-- Si U + I (utilisateur + information) =
+    > Souhaitez-vous ajouter ou sortir un utilisateur d'un groupe (G) ? >>> ALEXANDRA 
+- Si A + O (action + ordinateur) =
     > 
 
 ### Difficultés rencontrées et solutions trouvées
