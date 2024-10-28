@@ -33,6 +33,17 @@ Client | CLILIN01 | Ubuntu 22.04/24.04 LTS | utilisateur wilder | 172.16.10.30/2
 Serveur | SRVWIN01 | Windows Server 2022 | Administrator | 172.16.10.5/24
 Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
+### Arborescence du menu proposé
+
+- Veuillez identifier votre profil : utilisateur (U) ou Ordinateur client (O) (read -p)
+- Souhaitez-vous réaliser une action dans le système (A) ou obtenir une information du système (I) ?
+- Si U + A (utilisateur + action) = 
+    > Souhaitez-vous créer (C) ; supprimer (S) ; désactiver (D) un compte utilisateur local ?
+    > Souhaitez-vous effectuer un changement de mot de passe (M) ?
+    > Souhaitez-vous ajouter ou sortir un utilisateur d'un groupe (G) ?
+- Si U + I (utilisateur + information) =
+    > 
+
 ### Difficultés rencontrées et solutions trouvées
 
 | Difficultés | solutions |
