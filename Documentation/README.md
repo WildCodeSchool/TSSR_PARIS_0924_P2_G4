@@ -39,7 +39,9 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 - Souhaitez-vous réaliser une action dans le système (A) ou obtenir une information du système (I) ?
 - Si U + A (utilisateur + action) = 
     > Souhaitez-vous créer (C) ; supprimer (S) ; désactiver (D) un compte utilisateur local ?
+    
     > Souhaitez-vous effectuer un changement de mot de passe (M) ?
+    
     > Souhaitez-vous ajouter ou sortir un utilisateur d'un groupe (G) ?
 - Si U + I (utilisateur + information) =
     > 
