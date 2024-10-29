@@ -35,18 +35,15 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
 ### Arborescence du menu proposé
 
-- Souhaitez-vous réaliser une action dans le système (A) ou obtenir une information du système (I) ?
-- Si A =
-    > Souhaitez-vous réaliser une action sur un utilisateur (U) ou sur un Ordinateur client (O) ?
-- Si A + U (action + utilisateur) = 
-    > Souhaitez-vous créer (C) ; supprimer (S) ; désactiver (D) un compte utilisateur local ? >>> MAMADOU
+- Souhaitez-vous réaliser une action (A) ou obtenir une information (I) ?
+- Votre action concerne un utilisateur (U) ou un Ordinateur client (O) ?
+- Votre action concerne :  
+    > La gestion du compte utilisateur (C) >>> MAMADOU
     
-    > Souhaitez-vous effectuer un changement de mot de passe (M) ? >>> WALID
+    > La gestion de groupe >>> ALEXANDRA 
     
-    > Souhaitez-vous ajouter ou sortir un utilisateur d'un groupe (G) ? >>> ALEXANDRA 
-- Si A + O (action + ordinateur) =
-    > 
-
+    > Le changement du mot de passe (M) >>> WALID 
+  
 ### Difficultés rencontrées et solutions trouvées
 
 | Difficultés | solutions |
