@@ -33,6 +33,17 @@ Client | CLILIN01 | Ubuntu 22.04/24.04 LTS | utilisateur wilder | 172.16.10.30/2
 Serveur | SRVWIN01 | Windows Server 2022 | Administrator | 172.16.10.5/24
 Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
+### Arborescence du menu proposé
+
+- Souhaitez-vous réaliser une action (A) ou obtenir une information (I) ?
+- Votre action concerne un utilisateur (U) ou un Ordinateur client (O) ?
+- Votre action concerne :  
+    > La gestion du compte utilisateur (C) >>> MAMADOU
+    
+    > La gestion de groupe >>> ALEXANDRA 
+    
+    > Le changement du mot de passe (M) >>> WALID 
+  
 ### Difficultés rencontrées et solutions trouvées
 
 | Difficultés | solutions |
