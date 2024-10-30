@@ -1,5 +1,16 @@
 #! /bin/bash
 
+# Si choix de quitter (fin)
+function quitter
+{
+    if
+        [ $operation = X ]
+    then
+        echo "Opération terminée !" 
+        exit 1
+    fi
+}
+
 # détermination de l'opération souhaitée : action ou information
 read -p "Vous souhaitez : 
 
@@ -7,7 +18,11 @@ read -p "Vous souhaitez :
 
 --------> obtenir une Information   ( tapez I ) 
 
+--------> quitter (fin)             ( tapez X )
+
 Sélectionnez votre choix : " operation 
+
+quitter
 
 # Si réponse invalide
 while
@@ -21,8 +36,12 @@ do
 
 --------> obtenir une Information   ( tapez I ) 
 
+--------> quitter (fin)             ( tapez X )
+
 Sélectionnez votre choix : " operation 
 done
+
+quitter
 
 # Si réponse A pour 'Action'
 if  
@@ -34,12 +53,16 @@ then
 
     --------> un Ordinateur client  ( tapez O ) 
 
-    Sélectionnez votre choix : " cible_action
+    --------> quitter (fin)         ( tapez X )
+
+    Sélectionnez votre choix : " operation
 fi
+
+quitter 
 
 # Si réponse invalide
 while
-    [ "$cible_action" != "U" ] && [ "$cible_action" != "O" ] 
+    [ "$operation" != "U" ] && [ "$operation" != "O" ] 
 do  
     echo "/!\ ERREUR : vous devez taper une réponse valide"
     
@@ -48,13 +71,17 @@ do
     --------> un Utilisateur        ( tapez U )  
 
     --------> un Ordinateur client  ( tapez O ) 
+
+    --------> quitter (fin)         ( tapez X )
     
-    Sélectionnez votre choix : " cible_action 
+    Sélectionnez votre choix : " operation
 done
+
+quitter 
 
 # Si réponse U pour 'Utilisateur'
 if  
-    [ "$cible_action" = "U" ]
+    [ "$operation" = "U" ]
 then
     read -p "Votre action concerne :
     
@@ -64,12 +91,16 @@ then
 
     --------> le changement du Mot de passe     ( tapez M ) 
 
-    Sélectionnez votre choix : " type_action
+    --------> quitter (fin)                     ( tapez X )
+
+    Sélectionnez votre choix : " operation
 fi
+
+quitter
 
 # Si réponse invalide
 while 
-    [ "$type_action" != "C" ] && [ "$type_action" != "G" ] && [ "$type_action" != "M" ]
+    [ "$operation" != "C" ] && [ "$operation" != "G" ] && [ "$operation" != "M" ]
 do 
     echo "/!\ ERREUR : vous devez taper une réponse valide"
     
@@ -81,12 +112,16 @@ do
 
     --------> le changement du Mot de passe     ( tapez M ) 
 
-    Sélectionnez votre choix : " type_action
+    --------> quitter (fin)                     ( tapez X )
+
+    Sélectionnez votre choix : " operation
 done
+
+quitter
 
 # Si réponse G pour 'gestion de Groupe'
 if 
-    [ "$type_action" = "G" ]
+    [ "$operation" = "G" ]
 then
     read -p "Vous souhaitez :
 
@@ -95,7 +130,12 @@ then
     --------> Ajouter un utilisateur à un groupe local              ( tapez AL ) 
 
     --------> Sortir un utilisateur d'un groupe local               ( tapez SL ) 
+
+    --------> quitter (fin)                                         ( tapez X )
     
-    Sélectionnez votre choix : "
+    Sélectionnez votre choix : " operation
 fi
+
+quitter 
+
 
