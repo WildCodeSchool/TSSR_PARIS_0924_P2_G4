@@ -159,6 +159,36 @@ do
     Sélectionnez votre choix : " operation
 done 
 
+# Si réponse AA pour 'ajout groupe admin'
+if 
+    [ "$operation" = "AA" ] && [ "$operation" != "AL" ] && [ "$operation" != "SL" ] && [ "$operation" != "X" ]
+then
+    chmod -aG wheel wilder2
+fi
+
+quitter 
+
+# Si réponse invalide
+while
+    [ "$operation" != "AA" ] && [ "$operation" != "AL" ] && [ "$operation" != "SL" ] && [ "$operation" != "X" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
+do  
+    echo "/!\ ERREUR : vous devez taper une réponse valide"
+    
+    read -p "Vous souhaitez :
+
+    --------> Ajouter un utilisateur à un groupe d'administration   ( tapez AA ) 
+
+    --------> Ajouter un utilisateur à un groupe local              ( tapez AL ) 
+
+    --------> Sortir un utilisateur d'un groupe local               ( tapez SL ) 
+
+    --------> quitter (fin)                                         ( tapez X )
+    
+    Sélectionnez votre choix : " operation
+done 
+
+
+
 ##### --------------------------------- MENU DES ACTIONS POUR ORDINATEUR CLIENT --------------------------------- #####
 
 # Si réponse O pour 'Ordinateur client' (A + O)
