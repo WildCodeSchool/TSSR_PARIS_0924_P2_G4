@@ -51,8 +51,10 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
 | Semaine | BENZAI Walid | CLERY Alexandra | KONATE Mamadou |
 | :--- | :--- | :--- | :--- |
-28/10/24 au 31/10/24 | Travail sur script Utilisateur/Action : mot de passe | Travail sur script : menu | Travail sur script Utilisateur/Action : compte utilisateur 
+21/10/24 au 25/10/24 | Mise en place de l'environnement VM | Mise en place des VM client et de la documentation | Mise en place de l'environnement VM
+28/10/24 au 31/10/24 | Travail sur script Utilisateur/Action : mot de passe | Travail sur script : menu | Travail sur script Utilisateur/Action : compte utilisateur + travail sur guide utilisateur
 04/11/24 au 08/11/24 | . | . | .
+12/11/24 au 15/11/24 | . | . | .
 
 ### Difficultés rencontrées et suggestions d’améliorations futures
 
