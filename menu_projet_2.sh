@@ -1,5 +1,7 @@
 #!/bin/bash
 
+###---------------------------------- FONCTIONS APPELEES DANS LE MENU PRINCIPAL -----------------------------####
+
 function debut_menu 
 {
     echo ""
@@ -171,7 +173,7 @@ function quitter
     exit 0
 }
 
-# Boucle principale
+###------------------------- BOUCLE DU MENU PRINCIPAL -------------------------###
 clear
 while true; do 
     debut_menu
