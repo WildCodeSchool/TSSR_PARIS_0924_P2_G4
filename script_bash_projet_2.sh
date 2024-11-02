@@ -43,9 +43,11 @@ done
 
 quitter
 
+##### --------------------------------- MENU DES ACTIONS POUR UTILIATEUR --------------------------------- #####
+
 # Si réponse A pour 'Action'
 if  
-    [ "$operation" = "A" ] && [ "$operation" != "I" ] && [ "$operation" != "X" ]
+    [ "$operation" = "A" ] && [ "$operation" != "I" ]
 then
     read -p "Votre action concerne :
     
@@ -81,9 +83,9 @@ quitter
 
 # Si réponse U pour 'Utilisateur' (A + U)
 if  
-    [ "$operation" = "U" ] && [ "$operation" != "O" ]
+    [ "$operation" = "U" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
 then
-    read -p "Votre action concerne :
+    read -p "Votre action sur Utilisateur concerne :
     
     --------> la gestion du Compte utiliateur   ( tapez C )
 
@@ -100,11 +102,11 @@ quitter
 
 # Si réponse invalide
 while 
-    [ "$operation" != "C" ] && [ "$operation" != "G" ] && [ "$operation" != "M" ] && [ "$operation" != "X" ]
+    [ "$operation" != "C" ] && [ "$operation" != "G" ] && [ "$operation" != "M" ] && [ "$operation" != "X" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
 do 
     echo "/!\ ERREUR : vous devez taper une réponse valide"
     
-    read -p "Votre action concerne :
+    read -p "Votre action sur Utilisateur concerne :
     
     --------> la gestion du Compte utiliateur   ( tapez C )
 
@@ -119,9 +121,38 @@ done
 
 quitter
 
+while true; do
+    # Demande le nom d'utilisateur
+    read -p "Entrez le nom d'utilisateur à vérifier (ou tapez 'exit' pour quitter) : " username
+
+    # Permet à l'utilisateur de quitter
+    if [[ "$username" == "exit" ]]; then
+        echo "Sortie du programme."
+        exit 0
+    fi
+
+    # Vérifie si l'utilisateur existe
+    if id "$username" &>/dev/null; then
+        echo "L'utilisateur $username existe."
+
+        # Demande si l'utilisateur souhaite changer le mot de passe
+        read -p "Voulez-vous changer le mot de passe de $username ? (o/n) : " choix
+
+        if [[ "$choix" == "o" ]]; then
+            # Changement du mot de passe
+            passwd "$username"
+        else
+            echo "Aucune modification effectuée."
+        fi
+        break # Sort de la boucle après avoir traité l'utilisateur
+    else
+        echo "L'utilisateur $username n'existe pas. Veuillez réessayer."
+    fi
+done
+
 # Si réponse G pour 'gestion de Groupe'
 if 
-    [ "$operation" = "G" ] && [ "$operation" != "C" ] && [ "$operation" != "M" ]
+    [ "$operation" = "G" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
 then
     read -p "Vous souhaitez :
 
@@ -140,7 +171,7 @@ quitter
 
 # Si réponse invalide
 while
-    [ "$operation" != "AA" ] && [ "$operation" != "AL" ] && [ "$operation != "SL" ] && [ "$operation" != "X" ]
+    [ "$operation" != "AA" ] && [ "$operation" != "AL" ] && [ "$operation" != "SL" ] && [ "$operation" != "X" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
 do  
     echo "/!\ ERREUR : vous devez taper une réponse valide"
     
@@ -157,11 +188,43 @@ do
     Sélectionnez votre choix : " operation
 done 
 
+# Si réponse AA pour 'ajout groupe admin'
+if 
+    [ "$operation" = "AA" ] && [ "$operation" != "AL" ] && [ "$operation" != "SL" ] && [ "$operation" != "X" ]
+then
+    chmod -aG wheel wilder2
+fi
+
+quitter 
+
+# Si réponse invalide
+while
+    [ "$operation" != "AA" ] && [ "$operation" != "AL" ] && [ "$operation" != "SL" ] && [ "$operation" != "X" ] && [ "$operation" != "I" ] && [ "$operation" != "O" ]
+do  
+    echo "/!\ ERREUR : vous devez taper une réponse valide"
+    
+    read -p "Vous souhaitez :
+
+    --------> Ajouter un utilisateur à un groupe d'administration   ( tapez AA ) 
+
+    --------> Ajouter un utilisateur à un groupe local              ( tapez AL ) 
+
+    --------> Sortir un utilisateur d'un groupe local               ( tapez SL ) 
+
+    --------> quitter (fin)                                         ( tapez X )
+    
+    Sélectionnez votre choix : " operation
+done 
+
+
+
+##### --------------------------------- MENU DES ACTIONS POUR ORDINATEUR CLIENT --------------------------------- #####
+
 # Si réponse O pour 'Ordinateur client' (A + O)
 if  
-    [ "$operation" = "O" ]
+    [ "$operation" = "O" ] && [ "$operation" != "I" ]
 then
-    read -p "Votre action concerne :
+    read -p "Votre action sur Ordinateur client concerne :
     
     --------> la gestion de la machine  ( tapez M )  
 
@@ -178,11 +241,11 @@ quitter
 
 # Si réponse invalide
 while
-    [ "$operation" != "M" ] && [ "$operation" != "S" ] && [ "$operation != "R" ] && [ "$operation" != "X" ]
+    [ "$operation" != "M" ] && [ "$operation" != "S" ] && [ "$operation" != "R" ] && [ "$operation" != "X" ] && [ "$operation" != "I" ]
 do  
     echo "/!\ ERREUR : vous devez taper une réponse valide"
     
-    read -p "Votre action concerne :
+    read -p "Votre action sur Ordinateur client concerne :
     
     --------> la gestion de la machine  ( tapez M )  
 
@@ -196,3 +259,41 @@ do
 done 
 
 quitter
+ 
+##### --------------------------------- MENU DES INFORMATIONS --------------------------------- #####
+
+# Si réponse I pour 'Information'
+if  
+    [ "$operation" = "I" ] 
+then
+    read -p "Votre information concerne :
+    
+    --------> un Utilisateur        ( tapez U )  
+
+    --------> un Ordinateur client  ( tapez O ) 
+
+    --------> quitter (fin)         ( tapez X )
+
+    Sélectionnez votre choix : " operation
+fi
+
+quitter 
+
+# Si réponse invalide
+while
+    [ "$operation" != "U" ] && [ "$operation" != "O" ] && [ "$operation" != "X" ] 
+do  
+    echo "/!\ ERREUR : vous devez taper une réponse valide"
+    
+    read -p "Votre action concerne :
+    
+    --------> un Utilisateur        ( tapez U )  
+
+    --------> un Ordinateur client  ( tapez O ) 
+
+    --------> quitter (fin)         ( tapez X )
+    
+    Sélectionnez votre choix : " operation
+done
+
+quitter 
