@@ -36,22 +36,26 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 ### Arborescence du menu proposé
 
 - Souhaitez-vous réaliser une action (A) ou obtenir une information (I) ?
+	> Si choix A ou choix I : 
 - Votre action concerne un utilisateur (U) ou un Ordinateur client (O) ?
-- Votre action concerne :  
-    > La gestion du compte utilisateur (C) >>> MAMADOU
-    
-    > La gestion de groupe >>> ALEXANDRA 
-    
-    > Le changement du mot de passe (M) >>> WALID 
+	> Si choix U ou choix O
+- Votre [action]/[information] concerne ...
+- Exemple de travail de script sur un sprint : 
+	> La gestion du compte utilisateur (C) >>> MAMADOU
+
+	> La gestion de groupe (G) >>> ALEXANDRA
+
+	> Le changement du mot de passe (M) >>> WALID 
   
-### Difficultés rencontrées et solutions trouvées
+### Organisation des sprints
 
-| Difficultés | solutions |
-| :--- | :--- |
-xxx | xxx  
-xxx | xxx 
-xxx | xxx
+| Semaine | BENZAI Walid | CLERY Alexandra | KONATE Mamadou |
+| :--- | :--- | :--- | :--- |
+21/10/24 au 25/10/24 | Mise en place de l'environnement VM | Mise en place des VM client et de la documentation | Mise en place de l'environnement VM
+28/10/24 au 31/10/24 | Travail sur script Utilisateur/Action : mot de passe | Travail sur script : menu | Travail sur script Utilisateur/Action : compte utilisateur + travail sur guide utilisateur
+04/11/24 au 08/11/24 | . | . | .
+12/11/24 au 15/11/24 | . | . | .
 
-### Améliorations possibles et suggestions d’améliorations futures
+### Difficultés rencontrées et suggestions d’améliorations futures
 
-xxx 
+*TBD*
