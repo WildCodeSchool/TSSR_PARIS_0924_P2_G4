@@ -36,8 +36,17 @@
 - Points de vigilance pour assurer une configuration correcte
 
 ### 4. FAQ
-- Problèmes d'installation courants
-- Solutions aux erreurs connues
+#### Problèmes courants
+Les problèmes courants dans le scripting Bash et PowerShell pour l'automatisation de tâches à distance incluent des erreurs de connexion réseau, des permissions insuffisantes, des conflits de versions de script sur les différentes machines, et des problèmes de compatibilité entre les systèmes d'exploitation.
+
+#### Solutions simples
+Voici des solutions simples pour les problèmes courants dans les scripts d'automatisation à distance :
+
+- Erreurs de connexion réseau : vérifiez que les machines peuvent se "pinguer" entre elles et que les bons ports sont ouverts.
+- Permissions insuffisantes : assurez-vous que l'utilisateur a les droits nécessaires pour exécuter les scripts à distance.
+- Problèmes de compatibilité entre systèmes d'exploitation : utilisez des scripts compatibles avec plusieurs systèmes ou séparez les scripts pour chaque OS.
+- Erreurs de syntaxe et de logique : testez les scripts localement avant de les exécuter à distance.
+- Problèmes de variables et d'environnement : vérifiez que les variables nécessaires sont définies correctement sur chaque machine.
 
 ### 5. Conclusion
 - Récapitulatif des points clés
