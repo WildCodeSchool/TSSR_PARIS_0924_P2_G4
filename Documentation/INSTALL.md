@@ -13,7 +13,13 @@
 - [5. Conclusion](#5-conclusion)
 
 ### 1. Introduction
-- Objectif du projet
+Ce projet vise à automatiser des tâches sur des machines distantes à l'aide de scripts.
+2. Utilisation de base
+Lancement du script sur Windows
+
+Les scripts Bash et PowerShell permettent d'automatiser des tâches liées à la gestion des utilisateurs et des ordinateurs, telles que la création ou la modification d'utilisateurs, la récupération d'informations système, etc. Ils vous proposent un menu interactif qui permettent aux utilisateurs de choisir facilement l'action à effectuer, en appelant les scripts correspondants pour chaque tâche.
+
+Le script Bash est prévu pour fonctionner depuis une machine Serveur Debian et pour intéragir avec une machine client Ubuntu et le script PowerShell est prévu pour fonctionner depuis une machine Serveur Windows et pour intéragir avec une machine client Windows.
 
 ### 2. Prérequis techniques
 - Configuration requise des machines (serveur et clientes)
