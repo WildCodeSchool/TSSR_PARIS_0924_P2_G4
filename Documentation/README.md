@@ -37,21 +37,17 @@ Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
 
 - Souhaitez-vous réaliser une action (A) ou obtenir une information (I) ?
 - Votre action concerne un utilisateur (U) ou un Ordinateur client (O) ?
-- Votre action concerne :  
-    > La gestion du compte utilisateur (C) >>> MAMADOU
-    
-    > La gestion de groupe >>> ALEXANDRA 
-    
-    > Le changement du mot de passe (M) >>> WALID 
+- Votre action/information concerne :  
+- Menus successifs pour répondre aux commandes sélectionnées 
   
 ### Difficultés rencontrées et solutions trouvées
 
 | Difficultés | solutions |
 | :--- | :--- |
-xxx | xxx  
-xxx | xxx 
-xxx | xxx
+Gestion de la conduite du projet via GitHub | S'assurer d'une organisation cohérente des branches et de la maitrise des commandes GitHub  
+Mise en place du partage à distance | S'assurer de la viabilité de la mise en place des fonctionnalités SSH et WinRM 
+Gestion du travail à objectifs multiples | S'assurer d'organiser les sprints avec un suivi de l'avancement des sujets divers à mettre en place : environnement / scripting / documentation
 
 ### Améliorations possibles et suggestions d’améliorations futures
 
-xxx 
+Veiller à mettre en place l'environnement interconnecté au plus tôt et réaliser des tests fonctionnels tout au long du projet pour s'assurer de la viabilité des scripts et du partage à distance. 
