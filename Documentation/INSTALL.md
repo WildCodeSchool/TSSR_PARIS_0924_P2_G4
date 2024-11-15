@@ -18,6 +18,13 @@
 ### 2. Prérequis techniques
 - Configuration requise des machines (serveur et clientes)
 
+| Type machine | Nom | Système d'exploitation | Compte | Adresse IP fixe |
+| :---: | :---: | :---: | :---: | :---: |
+Client | CLIWIN01 | Windows 10 | utilisateur wilder | 172.16.10.20/24
+Client | CLILIN01 | Ubuntu 22.04/24.04 LTS | utilisateur wilder | 172.16.10.30/24
+Serveur | SRVWIN01 | Windows Server 2022 | Administrator | 172.16.10.5/24
+Serveur | SRVLIX01 | Debian 12 | root | 172.16.10.10/24
+
 ### 3. Installation et configuration
 #### Configuration du script PowerShell sur Windows Server
 - Détails de la configuration
